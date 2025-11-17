@@ -1,7 +1,11 @@
 openai
-langchain
+langchain==1.0.7
 langchain-openai
-langchain-community
+langchain-community==0.4.1
 python-dotenv
+langchain-classic==1.0.0
+langchain-core==1.0.5
+langchain-google-genai==3.0.3
+
 
 
