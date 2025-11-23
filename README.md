@@ -17,6 +17,11 @@ This repository contains a collection of Jupyter notebooks for experimenting wit
 
 *   **[react.ipynb](react.ipynb)**: Explores the implementation of a ReAct (Reasoning and Acting) agent, which can use tools to answer questions that require external knowledge.
 
+*   **[embeddings.ipynb](embeddings.ipynb)**: Covers the creation and use of text embeddings for semantic search. It demonstrates how to:
+    *   Generate embeddings for a list of words from [words.csv](words.csv).
+    *   Save the embeddings to [words-embeddings.csv](words-embeddings.csv).
+    *   Perform similarity searches to find semantically related terms.
+
 ## Setup and Installation
 
 1.  **Clone the repository:**
@@ -28,7 +33,7 @@ This repository contains a collection of Jupyter notebooks for experimenting wit
 2.  **Create and activate a virtual environment:**
     ```bash
     python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    source venv/bin/activate 
     ```
 
 3.  **Install dependencies:**
@@ -38,10 +43,20 @@ This repository contains a collection of Jupyter notebooks for experimenting wit
     ```
 
 4.  **Set up environment variables:**
-    Create a `.env` file in the root directory of the project by copying the `.env.example` file (if one exists) or creating a new one. Add your API keys to this file.
+    Create a `.env` file in the root directory. Add your API keys to this file.
     ```env
     # .env
     OPENAI_API_KEY="your-openai-api-key"
     GOOGLE_API_KEY="your-google-api-key"
     ```
     The `.env` file is included in the [.gitignore](.gitignore) to prevent accidental sharing of your keys.
+
+## Usage
+
+Once the setup is complete, you can run the Jupyter notebooks to explore the different LangChain features. Launch Jupyter Lab or Jupyter Notebook from your activated virtual environment:
+
+```bash
+jupyter lab
+```
+
+Then, navigate to the notebook file you wish to view.
